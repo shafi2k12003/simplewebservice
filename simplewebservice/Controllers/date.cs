@@ -11,11 +11,6 @@ namespace simplewebservice.Controllers
     [Route("[controller]")]
     public class date : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
         private readonly ILogger<date> _logger;
 
         public date(ILogger<date> logger)
